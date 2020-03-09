@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>teste</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="https://bootstrapmade.com/demo/themes/Amoeba/assets/img/favicon.png" rel="icon">
+    <link href="https://bootstrapmade.com/demo/themes/Amoeba/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="public/css/css(1)" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/css/animate.min.css" rel="stylesheet">
+    <link href="public/css/icofont.min.css" rel="stylesheet">
+    <link href="public/css/venobox.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="public/css/style(1).css" rel="stylesheet">
+  </head>
+
+<body>
+
+  <button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>
+
+  <header id="header" class="fixed-top">
+    <div class="container">
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="#"><span>the nav</span></a></h1>
+      </div>
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#services">Portfólio</a></li>
+          <li><a href="#portfolio">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--
+  <section id="hero">
+    <div class="hero-container">
+      <h1>mente$estatistica</h1>
+      <h2>Usando a estatística para tomada de decisão</h2>
+      <a href="#about" class="btn-get-started scrollto">Iniciar</a>
+    </div>
+  </section>
+  -->
+
+  <main id="main">
+    <div class="container">
+      <h3>Notas de empenho apresentando problema</h3>
+      <div class="barraProgresso">
+        Progresso: <input id="progresso"/> de 122
+      </div>
+      <input id="linhaCorrente"/>
+      <!--
+      <div class="container">
+        <div id="nseComProblema_table"></div>
+      </div>
+      -->
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title"><input id="neMascara"/></h4>
+          <p class="card-text"><span>Ano:</span><input id="ano"/></p>
+          <p class="card-text"><span>Tipo:</span><input id="tipo"/></p>
+        </div>
+      </div>
+      <br><br>
+    </div>
+
+  <div class="container">
+    <div class="table-responsive">
+      <div id="nse_table"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="proxima">
+      <button type="button" name="load_data" id="load_data" class="btn btn-info" onclick="jogaFooter();formataTabela()">Próxima</button>
+    </div>
+  </div>
+
+</main>
+  
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        © 2020 Copyright - <strong><span>Jackson</span></strong>
+      </div>
+      <div class="credits">
+        Desenvolvido por <a href="https://bootstrapmade.com/">Jackson</a>
+      </div>
+    </div>
+  </footer><!-- End #footer -->
+
+  <a href="#" class="back-to-top" style="display: none;"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="public/js/jquery.min.js.download"></script>
+  <script src="public/js/bootstrap.bundle.min.js.download"></script>
+  <script src="public/js/jquery.easing.min.js.download"></script>
+  <script src="public/js/validate.js.download"></script>
+  <script src="public/js/isotope.pkgd.min.js.download"></script>
+  <script src="public/js/venobox.min.js.download"></script>
+
+  <!-- Template Main JS File -->
+  <script src="public/js/main.js.download"></script>
+  
+  <nav class="mobile-nav d-lg-none">
+    <ul>
+      <li class="active"><a href="#header">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#team">Team</a></li>
+      <li class="drop-down"><a href="https://bootstrapmade.com/demo/themes/Amoeba/">Drop Down</a>
+        <ul>
+          <li><a href="#">Drop Down 1</a></li>
+          <li class="drop-down"><a href="#">Drop Down 2</a>
+            <ul>
+              <li><a href="#">Deep Drop Down 1</a></li>
+              <li><a href="#">Deep Drop Down 2</a></li>
+              <li><a href="#">Deep Drop Down 3</a></li>
+              <li><a href="#">Deep Drop Down 4</a></li>
+              <li><a href="#">Deep Drop Down 5</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Drop Down 3</a></li>
+          <li><a href="#">Drop Down 4</a></li>
+          <li><a href="#">Drop Down 5</a></li>
+        </ul>
+      </li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+  
+  <div class="mobile-nav-overly"></div>
+
+  <script>
+    if( window.self == window.top ){
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+      Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })
+      (window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-55234356-4', 'auto'); ga('send', 'pageview'); }
+  </script>
+
+  
+<script>
+
+  var linha = 1;
+  $(document).ready(function(){
+    $('#load_data').click(function(){
+      $.ajax({
+        url:"nseComProblema.csv",
+        dataType:"text",
+        success: function(data){
+          var desempenho_data = data.split(/\r?\n|\r/);
+          var table_data = '<table class="table table-bordered table-striped">';
+          for(var count = linha; count<=linha; count++){
+            var cell_data = desempenho_data[count].split(",");
+            table_data += '<tr>';
+            for(var cell_count=0; cell_count<cell_data.length; cell_count++){
+              if(count===0){
+                table_data += '<th>'+cell_data[cell_count]+'</th>';
+                table_data += "<th>status</th>";
+              }else{
+                table_data += '<td>'+cell_data[cell_count].substring(15, 25)+'</td>';
+                var neMascara = document.getElementById("neMascara");
+                neMascara.value = cell_data[cell_count].substring(15, 25);
+                table_data += "<td><input type='checkbox'/></td>";
+              }
+            }
+            table_data += '</tr>';
+          }
+          table_data += '</table>';
+          $('#nseComProblema_table').html(table_data);
+          var ne = document.getElementById("linhaCorrente");
+          ne.value = cell_data[0];
+          var progresso = document.getElementById("progresso");
+          progresso.value = linha;
+          linha = linha + 1;
+        }
+      });
+
+      $.ajax({
+        url:"nse.csv",
+        dataType:"text",
+        success: function(data){
+          var desempenho_data = data.split(/\r?\n|\r/);
+          var table_data = '<table id = "tabNotas" class="table table-bordered table-striped">';  
+          var lancamento = 1
+          for(var count=0; count<=1455; count++){
+            var cell_data = desempenho_data[count].split(";");
+            if(count===0){
+              table_data += '<th>Lanç.</th>';
+              for(var cell_count=2; cell_count<cell_data.length; cell_count++){
+                table_data += "<th style='text-align: center;'>"+cell_data[cell_count]+'</th>';
+              }   
+            }else{
+              var ne = document.getElementById("linhaCorrente");
+              if(cell_data[0]===ne.value){
+                var tipo = document.getElementById("tipo");
+                tipo.value = cell_data[1];
+                var ano = document.getElementById("ano");
+                ano.value = cell_data[0].substring(11, 15)
+                table_data += '<tr style="text-align: right;">';
+                table_data += '<td>'+lancamento+'º</td>'
+                lancamento = lancamento + 1
+                for(var cell_count=2; cell_count<cell_data.length; cell_count++){
+                  if(cell_data[cell_count]==="NA"){
+                    texto = ""    
+                  }else{
+                    if(cell_count >=3){
+                      texto = currencyFormatted(parseFloat(cell_data[cell_count]), 'R$');
+                    }else{
+                      texto = cell_data[cell_count].replace(/\uFFFD/g, "º")
+                    }
+                  }
+                  if(cell_count >=3){
+                    table_data += "<td style='width: 150px;'>"+texto+'</td>';
+                  }else{
+                    table_data += "<td>"+texto+'</td>';
+                  }
+                }
+              }
+            }
+            table_data += '</tr>';   
+          }
+          table_data += '</table>';
+          $('#nse_table').html(table_data);
+        }
+      });
+
+
+    });
+  
+  });
+
+  function jogaFooter(){
+    var rd = document.getElementById("footer");
+    rd.style.left = "0";
+    rd.style.position = "fixed";
+    rd.style.bottom = "0";
+    rd.style.width = "100%";
+  };
+
+  function currencyFormatted(value, str_cifrao) {
+    if(value < 0){
+      value = value*(-1)
+      return "-" + str_cifrao + ' ' + value.formatMoney(2, ',', '.');
+    }else{
+      return str_cifrao + ' ' + value.formatMoney(2, ',', '.');
+    }
+  }
+
+  Number.prototype.formatMoney = function (c, d, t) {
+    var n = this,
+        c = isNaN(c = Math.abs(c)) ? 2 : c,
+        d = d == undefined ? "." : d,
+        t = t == undefined ? "," : t,
+        s = n < 0 ? "-" : "",
+        i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "",
+        j = (j = i.length) > 3 ? j % 3 : 0;
+    return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+  };
+
+</script>
+  
+</body>
+</html>
